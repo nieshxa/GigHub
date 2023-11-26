@@ -34,7 +34,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   padding: 0 3rem;
@@ -70,6 +70,7 @@ header .logo span {
 .section {
   display: block;
   min-height: calc(100vh - 5rem);
+  width: 100vw;
 }
 home {
   margin-top: 5rem;
