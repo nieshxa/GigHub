@@ -33,6 +33,7 @@ header {
   justify-content: start;
   z-index: 1;
   width: 100%;
+  position: fixed;
 }
 header .logo span {
   color: var(--mango-tango);
