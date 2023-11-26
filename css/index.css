@@ -18,7 +18,6 @@
 }
 body {
   height: 100vh;
-  width: 100vw;
   background-color: var(--isabelline);
   font-family: var(--lexend);
   cursor: default;
