@@ -18,7 +18,7 @@
 }
 body {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: var(--isabelline);
   font-family: var(--lexend);
   cursor: default;
@@ -30,10 +30,14 @@ header {
   height: 5rem;
   border-bottom: solid 3px var(--topaz) !important;
   background-color: var(--isabelline);
-  justify-content: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   z-index: 1;
   width: 100%;
   position: fixed;
+  top: 0;
+  padding: 0 3rem;
 }
 header .logo span {
   color: var(--mango-tango);
@@ -88,7 +92,7 @@ home .sub-cta {
 }
 .search-the-hub input {
   border: none;
-  width: 28rem;
+  width: 20rem;
 }
 .search-the-hub button {
   color: var(--black);
