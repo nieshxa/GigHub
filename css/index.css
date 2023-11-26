@@ -18,7 +18,7 @@
 }
 body {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: var(--isabelline);
   font-family: var(--lexend);
   cursor: default;
@@ -34,7 +34,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   padding: 0 3rem;
