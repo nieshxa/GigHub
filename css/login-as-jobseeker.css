@@ -85,7 +85,7 @@ content form {
 form label {
   color: var(--mango-tango);
 }
-form input[type="text"] {
+form input[type="text"] , form input[type="password"] {
   border: solid 4px var(--gainsboro);
   width: 100%;
   outline: none;
