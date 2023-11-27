@@ -159,6 +159,11 @@ form button:hover {
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 900px) {
+  content .cta {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 750px) {
   header .register-link span {
     display: none;
