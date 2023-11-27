@@ -366,6 +366,29 @@ services .left button:hover {
 .services-cta img {
   width: 100%;
 }
+.review .name {
+  text-transform: uppercase;
+}
+.review {
+  width: 20rem;
+  border: solid 3px var(--isabelline);
+}
+.review:hover {
+  border: solid 3px var(--mango-tango);
+  cursor: pointer;
+}
+.review img:not(.rating-stars) {
+  background-color: var(--white);
+  width: 10rem;
+  height: 10rem;
+}
+.rating iconify-icon {
+  font-size: 2rem;
+}
+.more-review {
+  color: var(--mango-tango);
+  font-size: 1.5rem;
+}
 @media screen and (max-width: 1400px) {
   .service-slide-1 {
     flex-direction: column;
@@ -405,6 +428,16 @@ services .left button:hover {
   }
   .advantage {
     width: 45%;
+  }
+  .reviews {
+    flex-direction: column;
+  }
+  .review {
+    min-width: 50%;
+    max-width: 75%;
+  }
+  reviews {
+    padding-bottom: 4rem;
   }
 }
 @media screen and (max-width: 1200px) {
