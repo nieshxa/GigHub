@@ -3,11 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GigHub</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/homepage.css" />
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="./js/show-service-slide.js"></script>
+    <script src="./js/toggle-header-hamburger.js"></script>
   </head>
   <body>
-    <header></header>
+    <header class="d-flex align-items-center px-5 justify-content-between">
+      <div class="d-flex gap-5 align-items-center left-header">
+        <div class="logo fw-bold fs-3">Gig<span>Hub</span></div>
+        <iconify-icon icon="ci:hamburger-md" class="hamburger"></iconify-icon>
+        <div class="links d-flex fs-5 gap-4 align-items-center">
+          <div class="link d-flex align-items-center gap-1" id="hire-now-link">
+            Hire Now <iconify-icon icon="mingcute:down-fill"></iconify-icon>
+            <div class="ddown-hire rounded-3 p-2 shadow">
+              <a href="" class="text-decoration-none px-3 rounded-3"
+                >Job Posting</a
+              >
+              <a href="" class="text-decoration-none px-3 rounded-3"
+                >Browse Graduates</a
+              >
+            </div>
+          </div>
+          <div class="link d-flex align-items-center gap-1" id="apply-now-link">
+            Apply Now <iconify-icon icon="mingcute:down-fill"></iconify-icon>
+            <div class="ddown-apply rounded-3 p-2 shadow">
+              <a href="" class="text-decoration-none px-3 rounded-3"
+                >Your skills, your work</a
+              >
+              <a href="" class="text-decoration-none px-3 rounded-3"
+                >Top Jobs</a
+              >
+            </div>
+          </div>
+          <div class="link">About Us</div>
+        </div>
+      </div>
+      <a
+        href=""
+        class="login-btn px-4 py-1 rounded-pill fw-bold text-decoration-none fs-5"
+        >Login</a
+      >
+    </header>
     <content>
       <home class="section"></home>
       <popular-categories class="section"></popular-categories>

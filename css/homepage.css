@@ -24,6 +24,7 @@ body {
   width: 100%;
 
   margin-top: 5rem;
+  font-family: var(--lexend);
 }
 header {
   height: 5rem;
@@ -52,4 +53,125 @@ popular-categories {
 }
 services {
   background-color: var(--earth-yellow);
+}
+
+.ddown-hire,
+.ddown-apply {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+
+  position: absolute;
+  top: 7vh;
+  display: none;
+}
+.ddown-hire a,
+.ddown-apply a {
+  color: var(--black);
+  text-wrap: nowrap;
+}
+.ddown-hire a:hover,
+.ddown-apply a:hover {
+  background-color: var(--topaz);
+}
+#hire-now-link:hover .ddown-hire,
+#apply-now-link:hover .ddown-apply {
+  display: flex;
+}
+.link {
+  font-weight: 500;
+}
+.link iconify-icon {
+  font-size: 1rem;
+  color: var(--mango-tango);
+}
+.link:hover {
+  color: var(--mango-tango);
+  cursor: pointer;
+  transition: var(--transition-1);
+}
+.login-btn {
+  background-color: var(--topaz);
+  justify-self: end;
+  color: var(--black);
+  border: solid 3px var(--topaz);
+  transition: var(--transition-1);
+}
+.login-btn:hover {
+  color: var(--mango-tango);
+  border-color: var(--mango-tango);
+  transition: var(--transition-1);
+  background-color: var(--isabelline);
+}
+.hamburger {
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+@media screen and (max-width: 950px) {
+  .link,
+  .login-btn {
+    font-size: 1rem !important;
+  }
+  .ddown-hire {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+
+    position: absolute;
+    top: 1rem;
+    left: 8rem;
+    display: none;
+  }
+  .ddown-apply {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+
+    position: absolute;
+    top: 4rem;
+    left: 8rem;
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    height: fit-content;
+  }
+  header .links {
+    position: absolute;
+    z-index: 2;
+    flex-direction: column;
+    top: 6.5vh;
+    left: 10rem;
+    background-color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    display: none !important;
+  }
+  header .links.active {
+    position: absolute;
+    z-index: 2;
+    flex-direction: column;
+    top: 6.5vh;
+    left: 10rem;
+    background-color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    display: flex !important;
+  }
+  .left-header {
+    gap: 1rem !important;
+  }
+  #apply-now-link:hover .ddown-apply,
+  #hire-now-link:hover .ddown-hire {
+    display: none;
+  }
+  #apply-now-link.active .ddown-apply {
+    display: flex;
+  }
+  #hire-now-link.active .ddown-hire {
+    display: flex;
+  }
 }
