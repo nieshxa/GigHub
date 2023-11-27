@@ -162,8 +162,12 @@ input {
   transition: var(--transition-1);
 }
 @media screen and (max-width: 1200px) {
-  .section {
+  /* .section {
     min-height: fit-content;
+  } */
+  home {
+    display: flex !important;
+    flex-direction: column;
   }
   .home-footer {
     flex-direction: column;
@@ -174,6 +178,7 @@ input {
   .home-main {
     height: fit-content;
     padding: 3rem;
+    flex-grow: 1;
   }
   .left-1,
   .left-2 {
