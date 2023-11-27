@@ -42,23 +42,15 @@ header {
 }
 content {
   width: 100%;
+  cursor: default;
 }
 .section {
   display: block;
+  background-color: var(--isabelline);
 
   width: 100%;
   min-height: 100%;
 }
-home {
-  background-color: var(--black);
-}
-popular-categories {
-  background-color: var(--blue);
-}
-services {
-  background-color: var(--earth-yellow);
-}
-
 .ddown-hire,
 .ddown-apply {
   display: flex;
@@ -112,6 +104,86 @@ services {
   font-size: 1.5rem;
   display: none;
 }
+home .cta {
+  font-size: 4rem;
+}
+home .cta span {
+  color: var(--mango-tango);
+}
+home .sub-cta {
+  font-size: 1rem;
+}
+.search-the-hub {
+  background-color: var(--white);
+  width: fit-content;
+}
+.search-the-hub iconify-icon {
+  font-size: 1.5rem;
+}
+.search-the-hub input {
+  border: none;
+  width: 20rem;
+}
+.search-the-hub button {
+  color: var(--black);
+  border: solid 2.5px var(--topaz);
+  transition: var(--transition-1);
+  background: var(--topaz);
+}
+.search-the-hub button:hover {
+  color: var(--mango-tango);
+  border-color: var(--mango-tango);
+  transition: var(--transition-1);
+  background-color: var(--isabelline);
+}
+input {
+  outline: none;
+}
+.home-footer {
+  height: 15vh;
+  background-color: var(--mango-tango);
+}
+.home-main {
+  height: 75vh;
+}
+.home-footer .left {
+  color: var(--white);
+}
+.home-footer .right a {
+  color: var(--white);
+  border: solid 3px var(--white);
+  transition: var(--transition-1);
+  font-weight: 500;
+}
+.home-footer .right a:hover {
+  border-color: var(--black);
+  background-color: var(--topaz);
+  color: var(--ba);
+  transition: var(--transition-1);
+}
+@media screen and (max-width: 1200px) {
+  .section {
+    min-height: fit-content;
+  }
+  .home-footer {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 0;
+    height: fit-content;
+  }
+  .home-main {
+    height: fit-content;
+    padding: 3rem;
+  }
+  .left-1,
+  .left-2 {
+    text-align: center;
+  }
+  .left-1 {
+    font-size: 1.3rem !important;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .link,
   .login-btn {
@@ -177,6 +249,12 @@ services {
   }
   #hire-now-link.active .ddown-hire {
     display: flex;
+  }
+  home .cta {
+    font-size: 3rem;
+  }
+  #home-search {
+    width: 50vw;
   }
 }
 
