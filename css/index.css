@@ -84,16 +84,6 @@ content {
   top: 3.25rem;
   display: none;
 }
-.ddown-login {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--white);
-
-  position: absolute;
-  top: 4rem;
-  right: 3rem;
-  display: none;
-}
 .ddown-hire a,
 .ddown-apply a,
 .ddown-login a {
@@ -112,6 +102,18 @@ content {
 #hire-now-link:hover .ddown-hire,
 #apply-now-link:hover .ddown-apply {
   display: flex;
+}
+.ddown-login {
+  display: none;
+}
+.ddown-login.active {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+
+  position: absolute;
+  top: 4rem;
+  right: 3rem;
 }
 .link,
 .link a {
@@ -594,9 +596,6 @@ footer a:hover {
   #hire-now-link.active .ddown-hire {
     display: flex;
   }
-  .ddown-login.active {
-    display: flex;
-  }
 }
 @media screen and (max-width: 950px) {
   home .cta {
@@ -641,6 +640,9 @@ footer a:hover {
   }
   header {
     padding: 0 1.5rem;
+  }
+  .ddown-login.active {
+    right: 2rem;
   }
 }
 
