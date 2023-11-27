@@ -400,8 +400,8 @@ services .left button:hover {
     width: 100% !important;
   }
   .services-cta img {
-    height: 50vh;
-    width: auto;
+    height: auto;
+    width: 75%;
   }
   .advantage {
     width: 45%;
