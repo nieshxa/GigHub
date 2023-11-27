@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --topaz: #fec887;
+  --isabelline: #f6f2eb;
+  --lexend: "Lexend", sans-serif;
+  --mango-tango: #e57b1e;
+  --earth-yellow: #ecb067;
+  --transition-1: ease-in-out all 0.3s;
+  --black: #000;
+  --white: #fff;
+  --blue: #1213e5;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  height: calc(100vh - 5rem);
+  width: 100%;
+
+  margin-top: 5rem;
+  font-family: var(--lexend);
+  -webkit-user-select: none; /* Disable selection for WebKit browsers */
+  -moz-user-select: none; /* Disable selection for Firefox */
+  -ms-user-select: none; /* Disable selection for Microsoft Edge */
+  user-select: none; /* Disable selection for all other browsers */
+  color: var(--black) !important;
+
+  background-image: url(/assets/bg_body.png);
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+header {
+  height: 5rem;
+  width: 100%;
+  z-index: 1000;
+
+  border-bottom: solid 3px var(--topaz) !important;
+  padding: 0 3rem;
+  background-color: var(--isabelline);
+}
+header a {
+  height: 100%;
+}
+header a img {
+  height: 80%;
+}
+header .register-link {
+  color: var(--black);
+  transition: var(--transition-1);
+  height: fit-content;
+}
+header .register-link:hover {
+  text-decoration: underline !important;
+  transition: var(--transition-1);
+}
+header .register-link span {
+  color: var(--mango-tango);
+}
+content {
+}

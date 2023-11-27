@@ -84,13 +84,29 @@ content {
   top: 3.25rem;
   display: none;
 }
+.ddown-login {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+
+  position: absolute;
+  top: 4rem;
+  right: 3rem;
+  display: none;
+}
 .ddown-hire a,
-.ddown-apply a {
+.ddown-apply a,
+.ddown-login a {
   color: var(--black);
   text-wrap: nowrap;
+  font-weight: 500;
+}
+.ddown-login a {
+  text-align: center;
 }
 .ddown-hire a:hover,
-.ddown-apply a:hover {
+.ddown-apply a:hover,
+.ddown-login a:hover {
   background-color: var(--topaz);
 }
 #hire-now-link:hover .ddown-hire,
@@ -118,6 +134,7 @@ content {
   color: var(--black);
   border: solid 3px var(--topaz);
   transition: var(--transition-1);
+  cursor: pointer;
 }
 .login-btn:hover {
   color: var(--mango-tango);
@@ -577,6 +594,9 @@ footer a:hover {
   #hire-now-link.active .ddown-hire {
     display: flex;
   }
+  .ddown-login.active {
+    display: flex;
+  }
 }
 @media screen and (max-width: 950px) {
   home .cta {
@@ -599,6 +619,9 @@ footer a:hover {
   }
   .advantage {
     width: 100%;
+  }
+  reviews {
+    padding-bottom: 3rem;
   }
   footer {
     height: fit-content;
