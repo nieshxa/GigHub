@@ -330,6 +330,8 @@ services .left button:hover {
 .service-slide-1,
 .service-slide-2 {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hide-slide {
   display: none;
