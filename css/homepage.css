@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --topaz: #fec887;
+  --isabelline: #f6f2eb;
+  --lexend: "Lexend", sans-serif;
+  --mango-tango: #e57b1e;
+  --earth-yellow: #ecb067;
+  --transition-1: ease-in-out all 0.3s;
+  --black: #000;
+  --white: #fff;
+  --blue: #1213e5;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  height: calc(100vh - 5rem);
+  width: 100%;
+
+  margin-top: 5rem;
+}
+header {
+  height: 5rem;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+
+  border-bottom: solid 3px var(--topaz) !important;
+  background-color: var(--isabelline);
+}
+content {
+  width: 100%;
+}
+.section {
+  display: block;
+
+  width: 100%;
+  min-height: 100%;
+}
+home {
+  background-color: var(--black);
+}
+popular-categories {
+  background-color: var(--blue);
+}
+services {
+  background-color: var(--earth-yellow);
+}
