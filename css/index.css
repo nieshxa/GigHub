@@ -29,6 +29,7 @@ body {
   -moz-user-select: none; /* Disable selection for Firefox */
   -ms-user-select: none; /* Disable selection for Microsoft Edge */
   user-select: none; /* Disable selection for all other browsers */
+  color: var(--black) !important;
 }
 header {
   height: 5rem;
