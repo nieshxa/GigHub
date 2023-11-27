@@ -67,6 +67,7 @@ content {
 .section-title {
   border-bottom: solid 5px var(--topaz);
   width: fit-content;
+  margin-bottom: 2rem;
 }
 .ddown-hire,
 .ddown-apply {
@@ -494,7 +495,6 @@ footer a:hover {
   }
   .popu-cat-main {
     flex-direction: column;
-    margin-top: 2rem;
   }
   .popu-cat-main .left,
   .popu-cat-main .right {
