@@ -41,6 +41,18 @@ header {
   border-bottom: solid 3px var(--topaz) !important;
   background-color: var(--isabelline);
 }
+header .left-header {
+  height: 100%;
+}
+header .logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  height: 80%;
+  width: auto;
+}
 content {
   width: 100%;
   cursor: default;
@@ -482,6 +494,7 @@ footer a:hover {
   }
   .popu-cat-main {
     flex-direction: column;
+    margin-top: 2rem;
   }
   .popu-cat-main .left,
   .popu-cat-main .right {
