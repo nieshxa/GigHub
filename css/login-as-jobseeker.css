@@ -79,7 +79,7 @@ content .cta span {
 content form {
   background-color: var(--white);
   width: 75%;
-  min-width: 300px;
+  min-width: 350px;
   max-width: 800px;
 }
 form label {
