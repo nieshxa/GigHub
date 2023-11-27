@@ -52,6 +52,10 @@ content {
   width: 100%;
   min-height: 100%;
 }
+.section-title {
+  border-bottom: solid 5px var(--topaz);
+  width: fit-content;
+}
 .ddown-hire,
 .ddown-apply {
   display: flex;
@@ -343,9 +347,6 @@ services .left button:hover {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   font-size: 1rem;
-}
-.services-cta {
-  padding-bottom: 5rem;
 }
 .services-cta .cta {
   font-size: 3rem;
