@@ -85,35 +85,18 @@ content {
   display: none;
 }
 .ddown-hire a,
-.ddown-apply a,
-.ddown-login a {
+.ddown-apply a {
   color: var(--black);
   text-wrap: nowrap;
   font-weight: 500;
 }
-.ddown-login a {
-  text-align: center;
-}
 .ddown-hire a:hover,
-.ddown-apply a:hover,
-.ddown-login a:hover {
+.ddown-apply a:hover {
   background-color: var(--topaz);
 }
 #hire-now-link:hover .ddown-hire,
 #apply-now-link:hover .ddown-apply {
   display: flex;
-}
-.ddown-login {
-  display: none;
-}
-.ddown-login.active {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--white);
-
-  position: absolute;
-  top: 4rem;
-  right: 3rem;
 }
 .link,
 .link a {
@@ -143,6 +126,9 @@ content {
   border-color: var(--mango-tango);
   transition: var(--transition-1);
   background-color: var(--isabelline);
+}
+.login-btn a {
+  color: var(--black);
 }
 .hamburger {
   cursor: pointer;
@@ -640,9 +626,6 @@ footer a:hover {
   }
   header {
     padding: 0 1.5rem;
-  }
-  .ddown-login.active {
-    right: 2rem;
   }
 }
 

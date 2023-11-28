@@ -17,7 +17,7 @@
     />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <link rel="stylesheet" href="./css/login-as-jobseeker.css" />
+    <link rel="stylesheet" href="./css/login.css" />
   </head>
   <body>
     <header
@@ -44,6 +44,7 @@
           type="email"
           id="email"
           placeholder="Email Address"
+          autocomplete="email"
           class="rounded-2 px-2 py-1 mb-3"
         />
 
@@ -55,6 +56,7 @@
           type="password"
           id="password"
           placeholder="Password"
+          autocomplete="current-password"
           class="rounded-2 px-2 py-1 mb-3"
         />
         <div class="d-flex justify-content-between align-items-center gap-1">
@@ -81,9 +83,7 @@
           ><iconify-icon icon="logos:facebook"></iconify-icon>
         </div>
         <div class="d-flex justify-content-center mt-4">
-          <button class="rounded-pill px-4 py-1 fw-bold">
-            Login
-          </button>
+          <button class="rounded-pill px-4 py-1 fw-bold">Login</button>
         </div>
       </form>
     </content>
