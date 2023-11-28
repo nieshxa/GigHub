@@ -200,4 +200,12 @@ form button:hover {
     font-size: 1.75rem;
     width: 75%;
   }
+  form input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+  }
+  form input[type="checkbox"]:before {
+    width: 7px;
+    height: 7px;
+  }
 }
