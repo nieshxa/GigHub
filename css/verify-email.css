@@ -153,4 +153,7 @@ form img {
     font-size: 1.75rem;
     width: 75%;
   }
+  input[type="number"] {
+    font-size: 1.3rem;
+  }
 }
