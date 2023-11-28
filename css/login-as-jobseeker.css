@@ -188,3 +188,16 @@ form button:hover {
     height: 9px;
   }
 }
+@media screen and (max-width: 625px) {
+  body {
+    font-size: 0.9rem;
+  }
+  .remember-me-class,
+  .forgot-password {
+    font-size: 0.8rem!important;
+  }
+  content .cta {
+    font-size: 1.75rem;
+    width: 75%;
+  }
+}
