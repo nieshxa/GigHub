@@ -92,6 +92,14 @@ form input[type="email"] {
   outline: none;
   background-color: var(--white-smoke);
 }
+.login-btn {
+  background-color: var(--topaz);
+  justify-self: end;
+  color: var(--black);
+  border: solid 3px var(--topaz);
+  transition: var(--transition-1);
+  cursor: pointer;
+}
 .pass-input {
   border: solid 4px var(--gainsboro);
   background-color: var(--white-smoke);
