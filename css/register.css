@@ -85,6 +85,16 @@ content .cta {
 content .cta span {
   color: var(--mango-tango);
 }
+@media screen and (max-width: 1065px) {
+  content .cta {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  content .cta {
+    width: 80%;
+  }
+}
 content form {
   background-color: var(--white);
   width: 75%;
