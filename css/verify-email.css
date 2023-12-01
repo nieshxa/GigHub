@@ -35,6 +35,7 @@ body {
   user-select: none; /* Disable selection for all other browsers */
   color: var(--black) !important;
 
+  background-color: var(--isabelline);
   background-image: url(/assets/bg_body.png);
   background-size: cover;
   background-repeat: repeat-y;
